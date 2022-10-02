@@ -1,8 +1,8 @@
 from pytube import YouTube
 
-link = input("Enter Link of Youtube Video: ")
+link = input("Enter the link of the YouTube video: ")
 yt = YouTube(link)
 
 stream = yt.streams.get_highest_resolution()
 stream.download()
-print("Download has been completed!")
+print("Your download has been completed!")
